@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -73,22 +73,27 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Lokesh Gaddam',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Logo',
         src: 'img/logo.svg',
       },
       items: [
+        { to: '/', label: 'Home', position: 'left' },
+        { to: '/about', label: 'About', position: 'left' },
+        { to: '/experience', label: 'Experience', position: 'left' },
+        { to: '/projects', label: 'Projects', position: 'left' },
+        { to: '/skills', label: 'Skills', position: 'left' },
+        { to: '/achievements', label: 'Achievements', position: 'left' },
+        { to: '/contact', label: 'Contact', position: 'left' },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/LokiGadd',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://www.linkedin.com/in/lokesh-gaddam/',
+          label: 'LinkedIn',
           position: 'right',
         },
       ],
